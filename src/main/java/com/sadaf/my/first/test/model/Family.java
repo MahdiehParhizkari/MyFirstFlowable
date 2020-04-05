@@ -9,7 +9,7 @@ import lombok.NonNull;
 
 import java.io.Serializable;
 
-@Table(name = "myfamily")
+@Table(name = "family")
 @Entity
 @NoArgsConstructor
 @Data
