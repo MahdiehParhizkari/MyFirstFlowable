@@ -16,13 +16,13 @@ public class FamilyDaoimp implements FamilyDao {
     
     @Override
     public Family get(long ID) {
-        // Session currSession = entityManager.unwrap(Session.class);
-        // Family fmly = currSession.get(Family.class, ID);
-        Family fmly =new Family();
-        fmly.setID((long) 2);
-        fmly.setCodeMeli((long)999);
-        fmly.setAge((long)23);
-        fmly.setName("Sadaf");
+         Session currSession = entityManager.unwrap(Session.class);
+         Family fmly = currSession.get(Family.class, ID);
+        //Family fmly =new Family();
+        //fmly.setID((long) 2);
+        //fmly.setCodeMeli((long)999);
+        //fmly.setAge((long)23);
+        // fmly.setName("Sadaf");
 
         return fmly;
     }
